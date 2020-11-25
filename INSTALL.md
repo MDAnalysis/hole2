@@ -53,6 +53,11 @@ The core executables are the ones used in the [HOLE: Example
 Application](http://www.holeprogram.org/doc/index.html#_example_application)
 in the official docs.
 
+If you used a custom FORTRAN compiler, specify it
+
+    cd src
+    make PREFIX=$HOME/hole2 FC=gfortran-mp-6 install 
+
 
 Installation of other executables
 ---------------------------------

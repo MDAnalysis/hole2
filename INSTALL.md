@@ -9,7 +9,7 @@ follow the instructions below.
 Compiling from source
 ---------------------
 
-If your Fortran compiler is `gfrotran` then all the defaults should
+If your Fortran compiler is `gfortran` then all the defaults should
 work for you and you can say
 
      cd src
@@ -18,7 +18,7 @@ work for you and you can say
 
 
 If you have another Fortran compiler then you need to *always set the
-FC variable when you invoke `make`. In the example below I use
+`FC` variable when you invoke `make`*. In the example below I use
 `FC=gfortran-mp-6` to show how to set it. 
 
     cd src
@@ -26,7 +26,7 @@ FC variable when you invoke `make`. In the example below I use
     make FC=gfortran-mp-6
 	
 
-(Note: By sourcing `source.apache`, the version of the binaries will
+(Note: By sourcing `source.apache` the version of the binaries will
 be set to whatever is in `source.apache`'s `HoleVersion` variable. If
 you modify the sources then you should consider *not* setting these
 environment variables.)
@@ -53,7 +53,7 @@ The core executables are the ones used in the [HOLE: Example
 Application](http://www.holeprogram.org/doc/index.html#_example_application)
 in the official docs.
 
-If you used a custom FORTRAN compiler, specify it
+If you used a custom FORTRAN compiler, specify it again
 
     cd src
     make PREFIX=$HOME/hole2 FC=gfortran-mp-6 install 
